@@ -51,7 +51,7 @@ p{
         var(--rotate),
         rgb(113,190,250),rgb(80,166,249), rgb(62,244,170),rgb(54,243,195));
     transition: opacity 2s ease-in-out;
-    animation: rounddd 5s linear infinite;
+    animation: swirl 5s linear infinite;
 }
 .card::after{
     position: absolute;
@@ -68,11 +68,11 @@ p{
     background-image: linear-gradient(
         var(--rotate),
         rgb(113,190,250),rgb(80,166,249), rgb(62,244,170),rgb(54,243,195));
-    animation: rounddd 5s linear infinite;
+    animation: swirl 5s linear infinite;
     
 }
 
-@keyframes rounddd {
+@keyframes swirl {
     0%{
         --rotate: 0deg;
     }
