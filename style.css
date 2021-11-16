@@ -81,24 +81,3 @@ p{
     }   
 }
 
-/* 
-
-rgb(50,108,207)
-rgb(62,244,170)
-rgb(49,186,106)
-background: linear-gradient(270deg,rgb(50,108,207),rgb(62,244,170), rgb(49,186,106));
-
-
-
-
-
-for body
-rgb(65, 180, 134)
-
-extra body
-    background: linear-gradient(270deg,rgb(50,108,207),rgb(62,244,170), rgb(49,186,106), transparent 200%); 
-
-
-
-
-*/
