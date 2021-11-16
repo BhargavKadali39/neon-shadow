@@ -15,6 +15,6 @@ The above snippet is a experimental piece and I recommends using the codepen lin
 
 ![Screenshot (105)](https://user-images.githubusercontent.com/71930013/141993406-597ad377-f6e3-4113-84ed-8f6308a58061.png)
 
-
+[Click here for more info](https://developer.mozilla.org/en-US/docs/Web/CSS/@property#browser_compatibility)
 
 No video preview avaliable.
