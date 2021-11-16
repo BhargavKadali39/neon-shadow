@@ -1,1 +1,104 @@
 
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #0c1f46;
+}
+
+p{
+    margin: 0;
+    font-family: cursive;
+    font-size: 25px;
+    text-shadow: 1px 0px #9da2a3,
+        -1px 0px #9da2a3,
+        0px 1px #9da2a3,
+        0px -1px #9da2a3;
+}
+
+.card{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0;
+    padding: 150px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #101e3b;  /*don't remove this aquamarine*/
+    transition: all ease-in-out;
+}
+.card::before{
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    content: "";
+    height: 340px;
+    width: 207px;
+    border-radius: 8px;
+    border: 0.1px solid rgba(43, 43, 43, 0.199);
+    background-image: linear-gradient(
+        var(--rotate),
+        rgb(113,190,250),rgb(80,166,249), rgb(62,244,170),rgb(54,243,195));
+    transition: opacity 2s ease-in-out;
+    animation: rounddd 5s linear infinite;
+}
+.card::after{
+    position: absolute;
+    z-index: -2;
+    top: -1%;
+    left: -2%;
+    content: "";
+    transform: scale(1.07);
+    filter: blur(10px);
+    height: 340px;
+    width: 207px;
+    border-radius: 8px;
+
+    background-image: linear-gradient(
+        var(--rotate),
+        rgb(113,190,250),rgb(80,166,249), rgb(62,244,170),rgb(54,243,195));
+    animation: rounddd 5s linear infinite;
+    
+}
+
+@keyframes rounddd {
+    0%{
+        --rotate: 0deg;
+    }
+    100%{
+        --rotate: 360deg;
+    }   
+}
+
+/* 
+
+rgb(50,108,207)
+rgb(62,244,170)
+rgb(49,186,106)
+background: linear-gradient(270deg,rgb(50,108,207),rgb(62,244,170), rgb(49,186,106));
+
+
+
+
+
+for body
+rgb(65, 180, 134)
+
+extra body
+    background: linear-gradient(270deg,rgb(50,108,207),rgb(62,244,170), rgb(49,186,106), transparent 200%); 
+
+
+
+
+*/
